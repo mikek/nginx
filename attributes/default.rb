@@ -78,6 +78,7 @@ default['nginx']['worker_connections'] = 1024
 default['nginx']['worker_rlimit_nofile'] = nil
 default['nginx']['multi_accept']       = false
 default['nginx']['event']              = nil
+default['nginx']['server_tokens']      = "on"
 default['nginx']['server_names_hash_bucket_size'] = 64
 default['nginx']['sendfile'] = 'on'
 
@@ -88,4 +89,5 @@ default['nginx']['types_hash_max_size'] = 2048
 default['nginx']['types_hash_bucket_size'] = 64
 
 default['nginx']['proxy_read_timeout'] = nil
+default['nginx']['client_body_buffer_size'] = nil
 default['nginx']['client_max_body_size'] = nil
